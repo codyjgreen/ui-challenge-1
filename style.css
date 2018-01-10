@@ -1,120 +1,96 @@
-*{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-#a{
+#a {
     background-color: red;
     height: 75px;
-}
-#b{
+  }
+  
+  #b {
     background-color: blue;
     height: 150px;
-}
-#c{
+  }
+  
+  #c {
     background-color: green;
     height: 125px;
-}
-#d{
+  }
+  
+  #d {
     background-color: yellow;
     height: 125px;
-}
-#e{
+  }
+  
+  #ef {
+    display: flex;
+  }
+  
+  #e{
     background-color: orange;
-    height: 240px;
-    width: 50%;
-}
-#f{
+    height: 250px;
+    flex-grow: 1;
+  }
+  
+  #f{
     background-color: pink;
-    height: 240px;
-    width: 50%;
-}
-#g{
+    height: 250px;
+    flex-grow: 1;
+  }
+  
+  #gh{
+    display: flex;
+  }
+  
+  #g {
     background-color: beige;
-    height: 240px;
-    width: 50%;
-}
-#h{
+    height: 250px;
+    flex-grow: 1;
+  }
+  
+  #h {
     background-color: purple;
-    height: 240px;
-    width: 50%;
-}
-#i{
+    height: 250px;
+    flex-grow: 1;
+  }
+  
+  #i {
     background-color: lime;
     height: 80px;
-}
-
-
-@media screen and (min-width: 800px){
-
-    body{
-        width: 960px;
-        height: 700px;
+  }
+  
+  @media screen and (min-width: 800px) {
+    
+    #main {
+      display: flex;
     }
-    *{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    #body {
+      flex-grow: 4;
+      width: 760px;
+      display: flex;
+      flex-direction: column;
     }
-    #a{
-        background-color: red;
-        width: 100%;
-        height: 14.2%;
-        order: 1;
+    #b {
+      width: 200px;
+      height: 600px;
+      flex-grow: 1;
     }
-    #b{
-        flex-direction: column;
-        background-color: blue;
-        max-width: 20.83%;
-        height: 100%;
-        order: 2; 
+    .row {
+      display: flex;
+      width: 100%;
     }
-    #letter-box{
-        width: 760px;
-        height: 600px;
-        order:3;
+    #c, #d {
+      width: 380px;
+      height: 200px;
+      flex-grow: 1;
     }
-    #c{
-        background-color: green;
-        max-width: 50%;
-        height: 33.3333%;
-        order: 1; 
+  
+    #ef, #gh {
+      flex-grow: 1;
     }
-    #d{
-        background-color: yellow;
-        max-width: 50%;
-        height: 33.3333%;
-        order: 2; 
+    
+    #e, #f, #g, #h {
+      width: 190px;
+      height: 250px;
     }
-    #e{
-        background-color: orange;
-        max-width: 25%;
-        height: 41.6666%;
-        order: 3; 
+    #i {
+      width: 100%;
+      height: 150px;
     }
-    #f{
-        background-color: pink;
-        max-width: 25%;
-        height: 41.6666%;
-        order: 4; 
-    }
-    #g{
-        background-color: beige;
-        max-width: 25%;
-        height: 41.6666%;
-        order: 5; 
-    }
-    #h{
-        background-color: purple;
-        max-width: 25%;
-        height: 41.6666%;
-        order: 6; 
-    }
-    #i{
-        background-color: lime;
-        max-width: 100%;
-        height: 41.7%;
-        order:7; 
-    }
-
-}
+  }
